@@ -139,3 +139,14 @@ button,a{-webkit-tap-highlight-color:transparent}
 .audience-stat-note{color:var(--muted);font-size:14px}
 .audience-footnote{margin:18px 0 0;color:var(--muted);font-size:11px}
 @media(max-width:560px){.social-proof-section{padding-top:10px;padding-bottom:30px}.audience-stats{grid-template-columns:1fr}.audience-stat{min-height:150px;padding:20px}.followed-by{font-size:12px}}
+
+.testimonial-card{margin-top:20px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:28px}
+.testimonial-topline{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.testimonial-label,.testimonial-project{font:500 10px 'DM Mono',monospace;letter-spacing:.1em;color:var(--accent)}
+.testimonial-project{color:var(--muted)}
+.testimonial-card blockquote{margin:22px 0;font-size:clamp(17px,2.3vw,23px);line-height:1.65;color:var(--ink)}
+.testimonial-footer{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px}
+.testimonial-footer>div{display:flex;flex-direction:column;gap:4px}
+.testimonial-footer strong{font-size:14px;color:var(--ink)}
+.testimonial-footer span{font-size:12px;color:var(--muted)}
+.testimonial-note{margin:16px 0 0;color:var(--muted);font-size:11px}
