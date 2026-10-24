@@ -117,3 +117,25 @@ button,a{-webkit-tap-highlight-color:transparent}
 .contact-actions{position:relative;gap:12px;margin-top:25px}
 .contact-actions .button{gap:10px}
 @media(max-width:520px){.contact-actions{align-items:stretch;flex-direction:column}.contact-actions .button{width:100%;justify-content:space-between}}
+
+
+/* X audience social proof section */
+.social-proof-section{padding-top:28px;padding-bottom:50px}
+.social-proof-panel{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,48px);background:radial-gradient(ellipse at 0% 0%,rgba(197,255,69,.08),transparent 38%),radial-gradient(ellipse at 100% 100%,rgba(145,91,255,.13),transparent 42%),var(--panel);box-shadow:0 22px 70px rgba(0,0,0,.14)}
+.social-proof-copy{max-width:780px}
+.social-proof-copy h2{margin:14px 0 16px;font-size:clamp(32px,4.5vw,56px);line-height:1.04;letter-spacing:-.06em}
+.social-proof-copy>p:not(.eyebrow){max-width:600px;color:var(--muted);line-height:1.7}
+.followed-by{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:22px;color:var(--muted);font-size:14px}
+.followed-label{font:500 10px 'DM Mono',monospace;letter-spacing:.12em;color:var(--accent);margin-right:5px}
+.followed-by strong{color:var(--ink);font-weight:700}
+.follow-separator{color:var(--accent)}
+.audience-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+.audience-stat{min-height:190px;border:1px solid var(--line);border-radius:22px;padding:24px;background:linear-gradient(145deg,rgba(145,91,255,.14),rgba(145,91,255,.04));display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.audience-stat-smart{background:linear-gradient(145deg,rgba(71,208,139,.15),rgba(71,208,139,.04))}
+.audience-stat-label{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px;letter-spacing:.09em;font-weight:600}
+.audience-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--panel);color:#a878ff;font-size:23px}
+.audience-stat-smart .audience-icon{color:#42c98b}
+.audience-stat>strong{font-size:clamp(42px,6vw,66px);letter-spacing:-.065em;line-height:1.1;margin:15px 0 6px;color:var(--ink)}
+.audience-stat-note{color:var(--muted);font-size:14px}
+.audience-footnote{margin:18px 0 0;color:var(--muted);font-size:11px}
+@media(max-width:560px){.social-proof-section{padding-top:10px;padding-bottom:30px}.audience-stats{grid-template-columns:1fr}.audience-stat{min-height:150px;padding:20px}.followed-by{font-size:12px}}
