@@ -1,335 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Danny · Web3 KOL · Content · Growth</title>
-  <meta name="description" content="DeFi Danny (@defiufo) — Web3 KOL, content creator and growth partner. I use the product, then I say it like a person." />
-  <meta name="theme-color" content="#081018" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="motion.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="Danny (@defiufo) — Web3 content, community growth, and AI research. Selected work, product experiments, and writing.">
+  <title>Danny — Web3, Content & AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="orb orb-a" aria-hidden="true"></div>
-  <div class="orb orb-b" aria-hidden="true"></div>
-
-  <header class="nav">
-    <a class="brand" href="#top">
-      <span class="brand-mark">D</span>
-      <span class="brand-name">DANNY</span>
-    </a>
-    <nav>
-      <a href="#now">Now</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Danny home"><span class="mark">D</span><span>DANNY<span class="dot">.</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="#work">Work</a>
-      <a href="#hire">Hire</a>
-      <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">Light</button>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <a class="header-cta" href="https://x.com/defiufo" target="_blank" rel="noopener noreferrer">Let's talk <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero page-wrap">
       <div class="hero-copy">
-        <p class="live"><span class="pulse"></span> Open for work</p>
-        <h1>Danny<span class="hero-period">.</span></h1>
-        <p class="roles">Web3 <i></i> AI research <i></i> Content &amp; community</p>
-        <blockquote class="signal">
-          <span class="kicker">Signal</span>
-          <p>I use the product. Then I say it like a person — not a press kit.</p>
-        </blockquote>
-        <div class="cta-row">
-          <a class="btn btn-fill" href="#work">See the work</a>
-          <a class="btn btn-ghost" href="https://x.com/defiufo" target="_blank" rel="noopener">DM on X</a>
-          <a class="btn btn-ghost" href="https://github.com/defiufo" target="_blank" rel="noopener">GitHub</a>
+        <p class="eyebrow"><span class="status-dot"></span> WEB3 · CONTENT · AI RESEARCH</p>
+        <h1>I make useful things<br>easier to <span class="accent-text">understand.</span></h1>
+        <p class="hero-intro">I'm Danny. I work across Web3 content, community growth and AI research — turning products and complex ideas into work people can actually connect with.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://x.com/defiufo" target="_blank" rel="noopener noreferrer">Find me on X <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>Independent creator · Community builder · Curious about AI</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Danny's profile image in a 3D frame">
+        <div class="visual-grid" aria-hidden="true"></div>
+        <div class="orbit orbit-outer" aria-hidden="true"></div>
+        <div class="orbit orbit-inner" aria-hidden="true"></div>
+        <div class="profile-frame" id="profileFrame">
+          <div class="frame-top"><span>ONLINE / BUILDING</span><span class="frame-indicator"></span></div>
+          <img class="profile-image" src="https://pbs.twimg.com/profile_images/2088747979821699073/lpgMp9ht.jpg" alt="Danny's profile picture" onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/284464027?v=4'">
+          <div class="frame-bottom"><span>@defiufo</span><span>WEB3 × AI</span></div>
+        </div>
+        <div class="floating-chip chip-one"><span class="chip-icon">↗</span><span><small>FOCUS</small><strong>Community</strong></span></div>
+        <div class="floating-chip chip-two"><span class="chip-icon">✳</span><span><small>EXPLORING</small><strong>AI research</strong></span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Areas of work"><div class="ticker-track">
+      <span>Web3 storytelling</span><i>✳</i><span>Community growth</span><i>✳</i><span>AI research</span><i>✳</i><span>Product experiments</span><i>✳</i><span>Content strategy</span><i>✳</i>
+      <span>Web3 storytelling</span><i>✳</i><span>Community growth</span><i>✳</i><span>AI research</span><i>✳</i><span>Product experiments</span><i>✳</i><span>Content strategy</span><i>✳</i>
+    </div></div>
+
+    <section class="section page-wrap" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow section-eyebrow">01 / SELECTED WORK</p><h2>A few things I've been<br><span class="muted-heading">working on.</span></h2></div>
+        <p class="section-aside">A mix of product contributions, research ideas and public writing. Projects in progress are labelled honestly.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-art art-agentos">
+            <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+            <div class="art-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="window-lines"><span></span><span></span><span></span><span></span></div><div class="window-node">AGENT<span>OS</span></div></div>
+            <span class="art-caption">PRODUCT NOTES / 01</span>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>CONTENT · PRODUCT TESTING</span><span class="status-label status-active">CONTRIBUTIONS</span></div>
+            <h3>AgentOS</h3>
+            <p>Product-focused content and field notes exploring agent workflows, research tools, model routing and the rough edges that matter when you're actually using a product.</p>
+            <a class="project-link" href="https://x.com/defiufo/status/2091116309165551619" target="_blank" rel="noopener noreferrer">Read product notes <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art art-deeptrace">
+            <div class="data-ring ring-one"></div><div class="data-ring ring-two"></div><div class="data-core">DT<span>↗</span></div>
+            <div class="data-label label-top">WEB SOURCES</div><div class="data-label label-bottom">ON-CHAIN DATA</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>AI · WEB3 RESEARCH</span><span class="status-label">IN PROGRESS</span></div>
+            <h3>DeepTrace</h3>
+            <p>An early-stage research-agent concept for investigating crypto projects using both web sources and on-chain information, with an emphasis on traceable evidence.</p>
+            <a class="project-link" href="https://github.com/defiufo" target="_blank" rel="noopener noreferrer">Explore GitHub <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art art-writing">
+            <div class="quote-mark">“</div><div class="writing-lines"><span></span><span></span><span></span><span></span></div><div class="writing-tag">RESEARCH → STORY</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>WRITING · RESEARCH</span><span class="status-label">ON X</span></div>
+            <h3>Research-led writing</h3>
+            <p>Threads and explainers about Web3 products and ideas, with the aim of making the important details clear without making the writing feel like an ad.</p>
+            <a class="project-link" href="https://x.com/defiufo/status/2062537975091634301" target="_blank" rel="noopener noreferrer">Read a selected post <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art art-community">
+            <div class="community-node node-center">YOU</div><div class="community-node node-one">IDEAS</div><div class="community-node node-two">PEOPLE</div><div class="community-node node-three">PRODUCT</div><svg viewBox="0 0 320 180" aria-hidden="true"><path d="M160 90 L80 48 M160 90 L245 42 M160 90 L236 143 M160 90 L80 140"/></svg>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>COMMUNITY · CAMPAIGNS</span><span class="status-label">ONGOING</span></div>
+            <h3>Community &amp; growth</h3>
+            <p>Helping projects communicate clearly, show up consistently and give community members something useful to engage with.</p>
+            <a class="project-link" href="https://x.com/defiufo/status/2056677662811181413" target="_blank" rel="noopener noreferrer">View a selected post <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="portfolio-note">Project artwork is illustrative. Links open the original public work or my GitHub profile; project status is shown where relevant.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="page-wrap about-layout">
+        <div><p class="eyebrow section-eyebrow">02 / A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="muted-heading">Practical by choice.</span></h2></div>
+        <div class="about-copy">
+          <p>I like understanding how a product works before I talk about it. That interest has taken me into Web3 communities, product testing, content creation and experiments with AI tools.</p>
+          <p>Sometimes that means explaining a technical idea in plain language. Other times it means testing a workflow, documenting what I learn or helping a community stay engaged with a project.</p>
+          <div class="skill-list"><span>Web3 research</span><span>Content creation</span><span>Community growth</span><span>AI tools</span><span>Product testing</span></div>
+          <a class="text-link" href="https://github.com/defiufo" target="_blank" rel="noopener noreferrer">See my GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-
-      <aside class="hero-card">
-        <div class="portrait">
-          <div class="float-tag tag-a"><strong>Web3</strong> · Research</div>
-          <div class="float-tag tag-b"><strong>AI</strong> · Building</div>
-          <img
-            src="https://pbs.twimg.com/profile_images/2088747979821699073/lpgMp9ht.jpg"
-            alt="Danny — @defiufo"
-            onerror="this.src='https://avatars.githubusercontent.com/u/284464027?v=4'"
-          />
-          <div class="portrait-meta">
-            <strong>@defiufo</strong>
-            <span>Straight to the point</span>
-          </div>
-        </div>
-        <ul class="chip-row">
-          <li>X since 2021</li>
-          <li>AgentOS</li>
-          <li>DeFi + AI</li>
-        </ul>
-      </aside>
     </section>
 
-
-    <div class="ticker" aria-label="Areas of work">
-      <div class="ticker-track">
-        <span>Web3 storytelling</span><span class="star">✳</span><span>AI research</span><span class="star">✳</span><span>Community growth</span><span class="star">✳</span><span>Product testing</span><span class="star">✳</span><span>Campaign content</span><span class="star">✳</span>
-        <span>Web3 storytelling</span><span class="star">✳</span><span>AI research</span><span class="star">✳</span><span>Community growth</span><span class="star">✳</span><span>Product testing</span><span class="star">✳</span><span>Campaign content</span><span class="star">✳</span>
-      </div>
-    </div>
-
-    <section class="about" id="about">
-      <div class="section-label">01 — Who I am</div>
-      <div class="about-grid">
-        <div>
-          <h2>I make a product feel used, then I make it get seen.</h2>
-          <p>
-            I’m Danny. I work across Web3 content, community growth, and AI research. I like getting close to a product, understanding what it actually does, then explaining it in a way people can use.
-            The useful part is the same every time: I touch the thing, I find the sentence a real user would care about, then I stay in the replies.
-          </p>
-          <p>
-            That looks like research threads, product walkthroughs, campaign content, AI experiments, and early-stage tools. I care about useful work people can inspect, not just a good-looking post.
-          </p>
-          <p class="open-line">Open for content, ambassadorship, KOL, and growth work.</p>
-        </div>
-        <div class="stats">
-          <article>
-            <b>Web3</b>
-            <span>Content &amp; community</span>
-            <small>Research-led storytelling</small>
-          </article>
-          <article>
-            <b>2021</b>
-            <span>On the timeline</span>
-            <small>still posting like a person</small>
-          </article>
-          <article>
-            <b>AgentOS</b>
-            <span>Current desk</span>
-            <small>content + product testing</small>
-          </article>
-          <article>
-            <b>KOL</b>
-            <span>How I work</span>
-            <small>use it, then talk</small>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="now" id="now">
-      <div class="section-label">02 — On the desk</div>
-      <h2>What I’m on right now</h2>
-      <p class="lede">If a founder only reads one block, make it this one.</p>
-
-      <div class="now-cards">
-        <article class="now-card featured">
-          <header>
-            <span>Content · Contributor</span>
-            <em>Live</em>
-          </header>
-          <h3>AgentOS</h3>
-          <p>
-            Local-first agent stack: model routing, skills, trading rails, memory.
-            I don’t write slogan copy. I install it, break the rough edges, and explain the system
-            so people see something they can actually run.
-          </p>
-          <ul>
-            <li>Product threads that start from using the stack</li>
-            <li>Research → save → analyze workflows</li>
-            <li>Public notes for @useAgentOS</li>
-          </ul>
-          <a href="https://x.com/useAgentOS" target="_blank" rel="noopener">Follow the project →</a>
-        </article>
-
-        <article class="now-card">
-          <header>
-            <span>AI research product</span>
-            <em>In progress</em>
-          </header>
-          <h3>DeepTrace</h3>
-          <p>
-            An early-stage research-agent concept for exploring crypto projects, protocols, tokens, on-chain activity, and information from the wider web in one place.
-            The goal is to make research easier to follow and sources easier to check.
-          </p>
-          <a href="https://github.com/defiufo" target="_blank" rel="noopener">Explore my public projects →</a>
-        </article>
-        <article class="now-card">
-          <header>
-            <span>Personal brand</span>
-            <em>Ongoing</em>
-          </header>
-          <h3>Character + feed</h3>
-          <p>
-            Consistent-character AI stills and stories sitting next to trader-voice posts.
-            The point isn’t the tool. The point is a face people remember when the timeline is loud.
-          </p>
-          <a href="https://x.com/defiufo" target="_blank" rel="noopener">Watch the feed →</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="hire-what" id="services">
-      <div class="section-label">03 — What you are hiring</div>
-      <h2>One post should move someone. One campaign should leave a room.</h2>
-      <div class="service-grid">
-        <article>
-          <span>01</span>
-          <h3>Content</h3>
-          <p>Threads, explainers, launch copy. Start from the feeling people already have, then show why your product is the move.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Growth</h3>
-          <p>A narrative plus a loop: post, stay in replies, point at the product. Attention that doesn’t die after the like.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>KOL / Ambassador</h3>
-          <p>I use it on camera and in the feed. Representation from rooms I already sit in — not a one-off dump of the docs.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="work" id="work">
-      <div class="section-label">04 — Selected work</div>
-      <h2>Selected work & experiments</h2>
-
-      <div class="work-list">
-        <article>
-          <div class="work-meta">
-            <span>AI · Research</span>
-            <span>Product concept · In progress</span>
-          </div>
-          <h3>DeepTrace — research agent</h3>
-          <p>
-            Exploring a focused research interface for crypto tokens, protocols, on-chain activity, and web sources. The idea is to bring evidence together so a user can understand a topic without relying on on-chain data alone.
-          </p>
-          <a href="https://github.com/defiufo" target="_blank" rel="noopener">See public projects →</a>
-        </article>
-
-        <article>
-          <div class="work-meta">
-            <span>Automation · Web3</span>
-            <span>Technical experiment</span>
-          </div>
-          <h3>Solana trading bot research</h3>
-          <p>
-            Hands-on exploration of a trading-bot workflow around token discovery, swap execution, RPC reliability, and basic risk checks. Presented as a technical experiment, not as a live product or investment recommendation.
-          </p>
-          <a href="https://github.com/defiufo" target="_blank" rel="noopener">See public projects →</a>
-        </article>
-
-        <article class="featured-x-post">
-          <div class="work-meta">
-            <span>Featured X post</span>
-            <span>Original post · @defiufo</span>
-          </div>
-          <h3>From the timeline</h3>
-          <p>A featured post from my X account. Open the original post to read the full context and join the conversation.</p>
-          <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
-            <a href="https://x.com/defiufo/status/2062537975091634301">View this post on X</a>
-          </blockquote>
-          <a href="https://x.com/defiufo/status/2062537975091634301" target="_blank" rel="noopener">Read the original post →</a>
-        </article>
-
-        <article class="featured-x-post">
-          <div class="work-meta">
-            <span>Featured X post</span>
-            <span>Original post · @defiufo</span>
-          </div>
-          <h3>Another note from the timeline</h3>
-          <p>A second featured post from my X account. Open the original to see the full post and context.</p>
-          <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
-            <a href="https://x.com/defiufo/status/2056677662811181413">View this post on X</a>
-          </blockquote>
-          <a href="https://x.com/defiufo/status/2056677662811181413" target="_blank" rel="noopener">Read the original post →</a>
-        </article>
-
-        <article>
-          <div class="work-meta">
-            <span>AgentOS</span>
-            <span>Long-form · product</span>
-          </div>
-          <h3>The stack, not the slogan</h3>
-          <p>
-            Pilot Router, local credentials, trading skills, approval layers.
-            Wrote it as a system people can run — cost, control, execution — instead of another “AI agent” headline.
-          </p>
-          <a href="https://x.com/defiufo/status/2091116309165551619" target="_blank" rel="noopener">Read on X →</a>
-        </article>
-
-        <article>
-          <div class="work-meta">
-            <span>AgentOS</span>
-            <span>Field notes</span>
-          </div>
-          <h3>Testing the stack in public</h3>
-          <p>
-            Gemini + search + skills. Saved research, passed it to the model, called out the rough edges on the gateway.
-            The post is a lab note, not a launch thread.
-          </p>
-          <a href="https://x.com/defiufo/status/2095873668609966405" target="_blank" rel="noopener">Read on X →</a>
-        </article>
-
-        <article>
-          <div class="work-meta">
-            <span>Character</span>
-            <span>Story · video</span>
-          </div>
-          <h3>A face the brand can keep</h3>
-          <p>
-            Consistent-character stills and clips for promos and set pieces.
-            Same person across scenes so the feed doesn’t look like a new intern every week.
-          </p>
-          <a href="https://x.com/defiufo" target="_blank" rel="noopener">See the feed →</a>
-        </article>
-
-        <article>
-          <div class="work-meta">
-            <span>Research</span>
-            <span>Threads</span>
-          </div>
-          <h3>Read the thing first</h3>
-          <p>
-            Vesting, launchpads, portfolio drift, wallet-level notes.
-            Content that starts from opening the docs and the product — not from a briefing doc alone.
-          </p>
-          <a href="https://x.com/defiufo" target="_blank" rel="noopener">On X →</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="sample">
-      <div class="section-label">05 — How it reads</div>
-      <figure>
-        <blockquote>
-          AgentOS is basically an AI agent stack built around cost, control, and execution.
-          Pilot Router picks the cheapest capable model locally. Native trading across the rails people already use.
-          Local-first credentials, memory and routing. The interesting part is that it all runs from one local runtime.
-        </blockquote>
-        <figcaption>From the AgentOS stack note. Product after the idea. No slogan salad.</figcaption>
-      </figure>
-    </section>
-
-    <section class="cta" id="hire">
-      <div class="section-label">06 — Let’s work</div>
-      <h2>Got a product that needs a voice that doesn’t sound hired?</h2>
-      <p>
-        Send the link. I’ll tell you straight if I can use it, and what the first post should actually say.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-fill" href="https://x.com/defiufo" target="_blank" rel="noopener">DM @defiufo</a>
-        <a class="btn btn-ghost" href="https://x.com/useAgentOS" target="_blank" rel="noopener">See AgentOS work</a>
+    <section class="contact-section page-wrap" id="contact">
+      <div class="contact-panel">
+        <div class="contact-orb" aria-hidden="true"></div>
+        <p class="eyebrow">03 / HAVE SOMETHING IN MIND?</p>
+        <h2>Let's make something<br><span class="accent-text">worth paying attention to.</span></h2>
+        <p>If you're building in Web3 or AI and need content, research or community support, let's talk.</p>
+        <a class="button button-primary" href="https://x.com/defiufo" target="_blank" rel="noopener noreferrer">Message me on X <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Danny · @defiufo</p>
-    <p>Web3 · AI research · content · community</p>
-  </footer>
-
+  <footer class="site-footer page-wrap"><a class="wordmark" href="#top"><span class="mark">D</span><span>DANNY<span class="dot">.</span></span></a><span>Web3 · Content · AI research</span><a href="https://x.com/defiufo" target="_blank" rel="noopener noreferrer">@defiufo ↗</a><span>© <span id="year"></span></span></footer>
   <script src="script.js"></script>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
