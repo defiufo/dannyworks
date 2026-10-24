@@ -82,7 +82,13 @@ if (!reduce) {
         orb.style.translate = `${x * mag}px ${y * mag}px`;
       });
       if (portrait) {
-        portrait.style.transform = `translateY(-4px) rotateX(${y * -4}deg) rotateY(${x * 5}deg)`;
+        const rect = portrait.getBoundingClientRect();
+        const localX = (e.clientX - rect.left) / rect.width - 0.5;
+        const localY = (e.clientY - rect.top) / rect.height - 0.5;
+        const inside = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
+        portrait.style.transform = inside
+          ? `perspective(1100px) rotateX(${localY * -12}deg) rotateY(${localX * 14}deg) translateY(-5px)`
+          : `perspective(1100px) rotateX(${y * -2}deg) rotateY(${x * 3}deg)`;
       }
     },
     { passive: true }
