@@ -88,3 +88,15 @@ if (!reduce) {
     { passive: true }
   );
 }
+
+
+// Add subtle pointer-follow highlights to interactive cards.
+if (!reduce && window.matchMedia("(pointer:fine)").matches) {
+  document.querySelectorAll(".work-list article, .now-card, .service-grid article, .stats article").forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--mx", (event.clientX - rect.left) + "px");
+      card.style.setProperty("--my", (event.clientY - rect.top) + "px");
+    }, { passive: true });
+  });
+}
